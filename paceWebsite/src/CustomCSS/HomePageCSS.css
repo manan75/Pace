@@ -1,0 +1,13 @@
+.heading-text{
+    color: white;
+    font-family:Inkut antiqua;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+.heading-text h1{
+    font-size: 3.7rem;
+    padding-left: 25px;
+    padding-bottom: 20px;
+}
+.heading-text h2{
+    padding-left: 25px;
+}

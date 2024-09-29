@@ -1,0 +1,15 @@
+.custom-navbar {
+    background-color: #1B985E; /* Navbar background color */
+    padding: 1rem;;
+  }
+  
+  .custom-navbar .navbar-brand,
+  .custom-navbar .nav-link {
+    color: #ffffff; /* Font color */
+    font-size: 1.5rem; /* Font size */
+  }
+  
+  .custom-navbar .nav-link:hover {
+    color: #f8f9fa; /* Change color on hover */
+  }
+  
