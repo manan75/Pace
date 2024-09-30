@@ -11,7 +11,9 @@ function App() {
 
   return (
     <>
-     <HomePage/>
+    <HomePage/>
+    <br></br>
+     <NasaMap/>
 
     </>
   )

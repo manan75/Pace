@@ -74,9 +74,9 @@ function HomePage(){
       <Carousel.Item style={{ height: '100%' }}>
         <img
           className="d-block w-100"
-          src="https://via.placeholder.com/1920x500?text=First+Slide"
+          src={HomePage1}
           alt="First slide"
-          style={{ objectFit: 'cover', height: '100%' }} // Ensures image covers the height
+          style={{ objectFit: 'cover', height: '500px' }} // Ensures image covers the height
         />
         <Carousel.Caption>
           <h3>First Slide Label</h3>
