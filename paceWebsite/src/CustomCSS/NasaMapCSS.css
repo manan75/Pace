@@ -1,0 +1,10 @@
+/* App.css */
+.map-section {
+    background-color: #004d66; /* Dark teal or any background color you prefer */
+    padding: 40px 0;
+  }
+  
+  .map-section h2 {
+    color: #ffffff; /* White color for heading */
+    font-size: 2rem;
+  }  

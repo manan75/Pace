@@ -9,6 +9,15 @@ import HomePage1 from './assets/HomePage1.jpeg'
 
 
 function HomePage(){
+
+  const cardData = [
+    { title: 'Know more about PACE', img: HomePage1 },
+    { title: 'Exploring phytoplanktons', img: 'url-to-your-image2' },
+    { title: 'What is aerosol?', img: 'url-to-your-image3' },
+    { title: 'Build your own PACE', img: 'url-to-your-image4' },
+    { title: 'Ocean Ecology', img: 'url-to-your-image5' },
+    { title: 'Ocean Colour', img: 'url-to-your-image6' },
+  ];
     return(
         <>
         <NavbarComponent/>
@@ -102,12 +111,66 @@ function HomePage(){
           alt="Third slide"
           style={{ objectFit: 'cover', height: '100%' }} // Ensures image covers the height
         />
-        <Carousel.Caption>
+        <Carousel.Caption>   
+      
+
           <h3>Third Slide Label</h3>
           <p>Some representative placeholder content for the third slide.</p>
         </Carousel.Caption>
       </Carousel.Item>
     </Carousel>
+
+
+
+    <div className="container-fluid bg-blue text-center py-5">
+      <div className="row">
+        {cardData.map((card, index) => (
+          <div key={index} className="col-md-4 mb-4">
+            <div className="card  text-white card-hover">
+              <div
+                className="card-img-top card-image h-100"
+                style={{ backgroundImage: `url(${card.img})` }}
+              />
+              <div className="card-body">
+                <h5 className="card-title">{card.title}</h5>
+                <a href="#" className="btn btn-light">Read more</a>
+              </div>
+            </div>
+          </div>
+        ))}
+      </div>
+    </div>
+
+
+
+
+    <div className="container-fluid learning-hub-section text-center py-5">
+      <h2 className="text-white mb-4">Learning Hub</h2>
+      <div className="row justify-content-center">
+        <div className="col-md-3 mb-3">
+          <div className="learning-card">
+            <h4 className="text-white">8-11 Age</h4>
+          
+          </div>
+        </div>
+        <div className="col-md-3 mb-3">
+          <div className="learning-card">
+            <h4 className="text-white">12-15 Age</h4>
+          
+          </div>
+        </div>
+        <div className="col-md-3 mb-3">
+          <div className="learning-card">
+            <h4 className="text-white">16+ Age</h4>
+          
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+
+
  
 
  

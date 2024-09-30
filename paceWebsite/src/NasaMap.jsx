@@ -1,5 +1,6 @@
 import React, { useEffect, useRef } from 'react';
 import L from 'leaflet';
+import './CustomCSS/NasaMapCSS.css';
 
 const NasaMap = () => {
   const mapContainer = useRef(null);
@@ -36,9 +37,18 @@ const NasaMap = () => {
   }, []); // No dependencies mean it runs only once on mount
 
   return (
-    <div ref={mapContainer} style={{ height: '500px', width: '90%', marginLeft:'85px', borderRadius:'10px' }}>
-      {/* The map will render inside this div */}
+    <div>
+    {/* Map Section */}
+    <div className="container-fluid map-section text-center py-5">
+      <h2 className="text-white mb-4">See What is PACE doing right now</h2>
+      <div
+        ref={mapContainer}
+        style={{ height: '500px', width: '90%', marginLeft: '85px', borderRadius: '10px' }}
+      >
+        {/* The map will render inside this div */}
+      </div>
     </div>
+  </div>
   );
 };
 
