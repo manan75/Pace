@@ -43,7 +43,7 @@ const NasaMap = () => {
       <h2 className="text-white mb-4">See What is PACE doing right now</h2>
       <div
         ref={mapContainer}
-        style={{ height: '500px', width: '90%', marginLeft: '85px', borderRadius: '10px' }}
+        style={{ height: '500px', width: '90%', marginLeft: '75px', borderRadius: '10px' }}
       >
         {/* The map will render inside this div */}
       </div>
