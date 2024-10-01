@@ -6,6 +6,7 @@ import {  Row, Col, Carousel } from 'react-bootstrap';
 import 'bootstrap/dist/css/bootstrap.min.css'; // Import Bootstrap CSS
 import './CustomCSS/HomePageCSS.css'
 import HomePage1 from './assets/HomePage1.jpeg'
+import HomePageSection from './HomePageSection'
 
 
 function HomePage(){
@@ -18,6 +19,9 @@ function HomePage(){
     { title: 'Ocean Ecology', img: 'url-to-your-image5' },
     { title: 'Ocean Colour', img: 'url-to-your-image6' },
   ];
+
+
+
     return(
         <>
         <NavbarComponent/>
@@ -141,6 +145,9 @@ function HomePage(){
       </div>
     </div>
 
+
+
+<HomePageSection/>
 
 
 
