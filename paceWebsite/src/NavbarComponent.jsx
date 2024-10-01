@@ -71,7 +71,7 @@ function NavbarComponent(){
           </Navbar.Collapse>
         </Container>
       </Navbar>
-      <br />
+
  
 
  

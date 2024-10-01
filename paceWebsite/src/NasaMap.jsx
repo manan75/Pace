@@ -8,7 +8,7 @@ const NasaMap = () => {
   // Function to get the date in YYYY-MM-DD format for the previous day
   const getPreviousDate = () => {
     const date = new Date();
-    date.setDate(date.getDate() - 1); // Subtract one day
+    date.setDate(date.getDate() -1); // Subtract one day
     return date.toISOString().split('T')[0]; // Format the date
   };
 
@@ -43,7 +43,7 @@ const NasaMap = () => {
       <h2 className="text-white mb-4">See What is PACE doing right now</h2>
       <div
         ref={mapContainer}
-        style={{ height: '500px', width: '90%', marginLeft: '85px', borderRadius: '10px' }}
+        style={{ height: '500px', width: '90%', marginLeft: 'auto', borderRadius: '10px',marginRight:'auto' }}
       >
         {/* The map will render inside this div */}
       </div>

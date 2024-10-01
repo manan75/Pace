@@ -37,12 +37,12 @@ function HomePage(){
         </Col>
 
         {/* Right Carousel */}
-        <Col md={8}>
+        <Col md={8} className="p-0">
           <Carousel>
             <Carousel.Item>
               <img
-                className="d-block w-100"
-                src="https://via.placeholder.com/800x400?text=First+Slide"
+                className="d-block w-100 img-height"
+                src={HomePage1}
                 alt="First slide"
               />
               <Carousel.Caption>
@@ -79,7 +79,7 @@ function HomePage(){
 
 
 
- <Carousel style={{ height: '500px', paddingTop:"10px" }}> {/* Adjust height as needed */}
+ <Carousel style={{ height: '500px'}}> {/* Adjust height as needed */}
       <Carousel.Item style={{ height: '100%' }}>
         <img
           className="d-block w-100"
