@@ -29,7 +29,7 @@ function HomePage(){
         <NavbarComponent/>
 
         <Container fluid>
-      <Row>
+      <Row style={{maxHeight:'500px',minHeight:'500px'}}>
         {/* Left Sidebar */}
         <Col md={4} className="heading-text"style={{ backgroundColor: '#4AAEB5', padding: '20px' }}>
         <h1>LEARNING WITH PACE!</h1>
