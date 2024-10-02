@@ -54,7 +54,7 @@ function HomePage(){
               />
               <Carousel.Caption>
                 <h3>PACE</h3>
-                <p>Some representative placeholder content for the first slide.</p>
+                <p>Some representative placeholder content  for the first slide.</p>
               </Carousel.Caption>
             </Carousel.Item>
             <Carousel.Item>
