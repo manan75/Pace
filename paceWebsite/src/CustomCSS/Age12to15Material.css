@@ -1,0 +1,40 @@
+.learning-hub {
+    padding: 20px;
+    background-color: #003B4D; /* Dark background */
+  }
+  
+  .learning-card {
+    border: none;
+    border-radius: 10px;
+    background-color: #004d66; /* Slightly lighter than background */
+    color: white;
+    transition: transform 0.3s ease, background-color 0.3s ease;
+  }
+  
+  .learning-card:hover {
+    transform: scale(1.05);
+    background-color: #46B085; /* Hover color */
+  }
+  
+  .learning-card .card-title {
+    font-size: 1.5rem;
+    color: #b3ffff; /* Light text color */
+  }
+  
+  .learning-card .card-text {
+    color: #88D4D8; /* Text color complementing the palette */
+  }
+  .learning-card button {
+    background-color: #3498db;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    color: white;
+    transition: background-color 0.3s ease;
+  }
+  
+  .learning-card button:hover {
+    background-color: #57a773;
+    color: white;
+  }
+    
