@@ -8,6 +8,7 @@ import './CustomCSS/HomePageCSS.css'
 import HomePage1 from './assets/HomePage1.jpeg'
 import Jellyfish from './assets/jellyfish.jpeg'
 import aerosol from './assets/aerosol.jpeg'
+import buildPace from './assets/buildPace.jpeg'
 import HomePageSection from './HomePageSection'
 
 
@@ -17,9 +18,9 @@ function HomePage(){
     { title: 'Know more about PACE', img:'https://images-assets.nasa.gov/image/KSC-20231204-PH-KLS01_0027/KSC-20231204-PH-KLS01_0027~small.jpg' },
     { title: 'Exploring phytoplanktons', img: 'https://planktonforhealth.co.uk/wp-content/uploads/2017/04/What-are-Marine-Phytoplankton.jpg' },
     { title: 'What is aerosol?', img: aerosol },
-    { title: 'Build your own PACE', img: 'url-to-your-image4' },
+    { title: 'Build your own PACE', img: buildPace },
     { title: 'Ocean Ecology', img: Jellyfish },
-    { title: 'Ocean Colour', img: 'url-to-your-image6' },
+    { title: 'Ocean Colour', img: 'https://www.washingtonpost.com/wp-apps/imrs.php?src=https://arc-anglerfish-washpost-prod-washpost.s3.amazonaws.com/public/24M3ED4VLZG43BVMMHR6RV4NQA.jpg&w=1200' },
   ];
 
 
@@ -89,7 +90,7 @@ function HomePage(){
       <Carousel.Item style={{ height: '100%' }}>
         <img
           className="d-block w-100"
-          src={HomePage1}
+          src='https://images.adsttc.com/media/images/5212/d4b5/e8e4/4e20/3000/0241/large_jpg/landscape_hudson_park.jpg?1376965772'
           alt="First slide"
           style={{ objectFit: 'cover', height: '500px' }} // Ensures image covers the height
         />

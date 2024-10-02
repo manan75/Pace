@@ -8,14 +8,23 @@ function HomePage() {
     {
       id: 1,
       imgSrc: 'image1.png',  // Replace with actual image paths
-      title: 'Ocean Ecology',
+      title: 'WHY PACE?',
+      subTitle:'Ocean Ecology',
       text: 'Our ocean teems with life and many of its most vital species are invisible to us...',
     },
     {
       id: 2,
       imgSrc: 'image2.png',
-      title: 'Atmosphere',
+      title: 'WHY PACE? ',
+      subTitle:'PhytoPlanktons',
       text: 'The atmosphere plays a crucial role in regulating climate and weather patterns...',
+    },
+    {
+      id: 3,
+      imgSrc: 'image1.png',  // Replace with actual image paths
+      title: 'WHY PACE?',
+      subTitle:'Aerosols AND Clouds',
+      text: 'Our ocean teems with life and many of its most vital species are invisible to us...',
     },
     // Add more items as needed
   ];
@@ -37,6 +46,7 @@ function HomePage() {
                 cursor: 'pointer',
                 width: '100px',
                 height: '100px',
+                
                 opacity: activeItem.id === item.id ? 1 : 0.5,
               }}
             />
