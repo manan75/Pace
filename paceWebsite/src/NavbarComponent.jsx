@@ -22,29 +22,10 @@ function NavbarComponent(){
             >
               <Nav.Link href="#action2">HOME</Nav.Link>
               
-              <NavDropdown title="ABOUT US" id="navbarScrollingDropdown">
-              
-                <NavDropdown.Item href="#action4">
-                  Another action
-                </NavDropdown.Item>
-                <NavDropdown.Divider />
-                <NavDropdown.Item href="#action5">
-                  Something else here
-                </NavDropdown.Item>
-              </NavDropdown>
-              <NavDropdown title="RESOURCES" id="navbarScrollingDropdown">
-                <NavDropdown.Item href="#action3">RESOURCE</NavDropdown.Item>
-                <NavDropdown.Item href="#action4">
-                  Another action
-                </NavDropdown.Item>
-                <NavDropdown.Divider />
-                <NavDropdown.Item href="#action5">
-                  Something else here
-                </NavDropdown.Item>
-              </NavDropdown>
-            
-              <NavDropdown title="DATA" id="navbarScrollingDropdown">
-                <NavDropdown.Item href="#action3">DATA</NavDropdown.Item>
+              <Nav.Link href="#action2">ABOUT US</Nav.Link>
+             
+              <NavDropdown title="LEARNING HUB" id="navbarScrollingDropdown">
+                <NavDropdown.Item href="#action3">LEARNING HUB</NavDropdown.Item>
                 <NavDropdown.Item href="#action4">
                   Another action
                 </NavDropdown.Item>
@@ -54,8 +35,8 @@ function NavbarComponent(){
                 </NavDropdown.Item>
               </NavDropdown>
             
-              <NavDropdown title="GALLERY" id="navbarScrollingDropdown">
-                <NavDropdown.Item href="#action3">GALLERY</NavDropdown.Item>
+              <NavDropdown title="SCIENCE" id="navbarScrollingDropdown">
+                <NavDropdown.Item href="#action3">SCIENCE</NavDropdown.Item>
                 <NavDropdown.Item href="#action4">
                   Another action
                 </NavDropdown.Item>
@@ -64,6 +45,19 @@ function NavbarComponent(){
                   Something else here
                 </NavDropdown.Item>
               </NavDropdown>
+            
+              <NavDropdown title="PACE" id="navbarScrollingDropdown">
+                <NavDropdown.Item href="#action3">PACE</NavDropdown.Item>
+                <NavDropdown.Item href="#action4">
+                  Another action
+                </NavDropdown.Item>
+                <NavDropdown.Divider />
+                <NavDropdown.Item href="#action5">
+                  Something else here
+                </NavDropdown.Item>
+              </NavDropdown>
+
+              <Nav.Link href="#action2">GALLERY</Nav.Link>
             
             
             </Nav>
