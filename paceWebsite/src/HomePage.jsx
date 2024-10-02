@@ -6,17 +6,19 @@ import {  Row, Col, Carousel } from 'react-bootstrap';
 import 'bootstrap/dist/css/bootstrap.min.css'; // Import Bootstrap CSS
 import './CustomCSS/HomePageCSS.css'
 import HomePage1 from './assets/HomePage1.jpeg'
+import Jellyfish from './assets/jellyfish.jpeg'
+import aerosol from './assets/aerosol.jpeg'
 import HomePageSection from './HomePageSection'
 
 
 function HomePage(){
 
   const cardData = [
-    { title: 'Know more about PACE', img: HomePage1 },
-    { title: 'Exploring phytoplanktons', img: 'url-to-your-image2' },
-    { title: 'What is aerosol?', img: 'url-to-your-image3' },
+    { title: 'Know more about PACE', img:'https://images-assets.nasa.gov/image/KSC-20231204-PH-KLS01_0027/KSC-20231204-PH-KLS01_0027~small.jpg' },
+    { title: 'Exploring phytoplanktons', img: 'https://planktonforhealth.co.uk/wp-content/uploads/2017/04/What-are-Marine-Phytoplankton.jpg' },
+    { title: 'What is aerosol?', img: aerosol },
     { title: 'Build your own PACE', img: 'url-to-your-image4' },
-    { title: 'Ocean Ecology', img: 'url-to-your-image5' },
+    { title: 'Ocean Ecology', img: Jellyfish },
     { title: 'Ocean Colour', img: 'url-to-your-image6' },
   ];
 
@@ -46,7 +48,7 @@ function HomePage(){
             <Carousel.Item>
               <img
                 className="d-block w-100 img-height"
-                src={HomePage1}
+                src='https://magazine.utoronto.ca/wp-content/uploads/2022/04/children-learning-about-the-environment.jpg'
                 alt="First slide"
               />
               <Carousel.Caption>
@@ -57,7 +59,7 @@ function HomePage(){
             <Carousel.Item>
               <img
                 className="d-block w-100"
-                src="https://via.placeholder.com/800x400?text=Second+Slide"
+                src="https://images-assets.nasa.gov/image/KSC-20240208-PH-KMO03_0010/KSC-20240208-PH-KMO03_0010~small.jpg"
                 alt="Second slide"
               />
               <Carousel.Caption>
