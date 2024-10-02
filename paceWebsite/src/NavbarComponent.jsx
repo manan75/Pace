@@ -5,6 +5,8 @@ import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
 import NavDropdown from 'react-bootstrap/NavDropdown';
 import './CustomCSS/NavbarCSS.css';
+import { Link } from 'react-router-dom';
+
 
 
 function NavbarComponent(){
@@ -20,30 +22,27 @@ function NavbarComponent(){
               style={{ maxHeight: '100px' }}
               navbarScroll
             >
-              <Nav.Link href="#action2">HOME</Nav.Link>
+              <Nav.Link ><Link to="/" style={{ textDecoration: 'none', color: 'inherit' }}>HOME</Link></Nav.Link>
               
-              <Nav.Link href="#action2">ABOUT US</Nav.Link>
+              <Nav.Link ><Link to="/AboutUs" style={{ textDecoration: 'none', color: 'inherit' }}>ABOUT US</Link></Nav.Link>
              
+
+             {/* Learning hub routing*/}
               <NavDropdown title="LEARNING HUB" id="navbarScrollingDropdown">
-                <NavDropdown.Item href="#action3">LEARNING HUB</NavDropdown.Item>
-                <NavDropdown.Item href="#action4">
-                  Another action
-                </NavDropdown.Item>
-                <NavDropdown.Divider />
-                <NavDropdown.Item href="#action5">
-                  Something else here
-                </NavDropdown.Item>
+                <NavDropdown.Item  style={{ backgroundColor: '#47be87' }}   ><Link to="/Age8To11" style={{ textDecoration: 'none', color: 'inherit' }}>AGE GROUP 8-11</Link></NavDropdown.Item>
+                <NavDropdown.Item  style={{ backgroundColor: '#47be87' }}><Link to="/Age12to15" style={{ textDecoration: 'none', color: 'inherit' }}>AGE GROUP 12-15</Link></NavDropdown.Item>
+                <NavDropdown.Item  style={{ backgroundColor: '#47be87' }}><Link to="/Age16+" style={{ textDecoration: 'none', color: 'inherit' }}>AGE GROUP 16+</Link></NavDropdown.Item>
+                <NavDropdown.Item  style={{ backgroundColor: '#47be87' }}><Link to="/fotTeachers" style={{ textDecoration: 'none', color: 'inherit' }}>For teachers</Link></NavDropdown.Item>
               </NavDropdown>
+
+            {/* Sciences routing*/}
             
               <NavDropdown title="SCIENCE" id="navbarScrollingDropdown">
-                <NavDropdown.Item href="#action3">SCIENCE</NavDropdown.Item>
-                <NavDropdown.Item href="#action4">
-                  Another action
-                </NavDropdown.Item>
-                <NavDropdown.Divider />
-                <NavDropdown.Item href="#action5">
-                  Something else here
-                </NavDropdown.Item>
+              <NavDropdown.Item  style={{ backgroundColor: '#47be87' }}   ><Link to="/Science/Overview" style={{ textDecoration: 'none', color: 'inherit' }}>Overview</Link></NavDropdown.Item>
+              <NavDropdown.Item  style={{ backgroundColor: '#47be87' }}   ><Link to="/Science/PhytoPlankton" style={{ textDecoration: 'none', color: 'inherit' }}>Phytoplankton Exploration</Link></NavDropdown.Item>
+              <NavDropdown.Item  style={{ backgroundColor: '#47be87' }}   ><Link to="/Science/Wavelenght" style={{ textDecoration: 'none', color: 'inherit' }}>PACE by wavelength</Link></NavDropdown.Item>
+              <NavDropdown.Item  style={{ backgroundColor: '#47be87' }}   ><Link to="/Science/StoryMaps" style={{ textDecoration: 'none', color: 'inherit' }}>StoryMaps</Link></NavDropdown.Item>
+              
               </NavDropdown>
             
               <NavDropdown title="PACE" id="navbarScrollingDropdown">
