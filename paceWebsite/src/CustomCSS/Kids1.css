@@ -1,103 +1,64 @@
-/* General page styling */
-.kids1-page {
-    position: relative;
-    min-height: 100vh;
-  }
-  
-  /* Background image styling with blur */
-  .kids1-page::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-image: url('../assets/path.jpeg');
-    background-size: 100%;
-    background-repeat: repeat-y; /* Endless vertical scrolling */
-    z-index: -1;
-    opacity: 0.8; /* Adjust to your preference */
-    filter: blur(8px); /* Apply the blur effect */
-    will-change: transform, opacity;
-  }
-  
-  /* Index Bar styling */
-  .index-bar {
-    position: fixed;
-    top: 10%;
-    right: 5%;
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
-    z-index: 100;
-  }
-  
-  .index-bar a {
-    color: yellow;
-    text-decoration: none;
-    font-size: 1rem;
-    transition: color 0.3s ease;
-  }
-  
-  .index-bar a:hover {
-    color: #0056b3;
-  }
-  
-  .index-bar .active-link {
-    font-weight: bold;
-    color: #0056b3;
-  }
-  
-  /* Section styling */
-  .content-section {
-    background-color: rgba(255, 255, 255, 0.85);
-    border-radius: 15px;
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
-    transition: opacity 1s ease-in-out, transform 1s ease-in-out;
-    opacity: 0;
-    transform: translateY(50px);
-    height: 100vh;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  }
-  
-  /* Visible section */
-  .section-in-view {
-    opacity: 1;
-    transform: translateY(0);
-  }
-  
-  /* Hidden section */
-  .section-out-view {
-    opacity: 0;
-    transform: translateY(-50px);
-  }
-  
-  /* Progress bar styling */
-  .sticky-progress-bar {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    z-index: 1000;
-    height: 5px;
-    background-color: #17a2b8;
-  }
-  
-  /* Responsive styling */
-  @media (max-width: 768px) {
-    .index-bar {
-      top: 5%;
-      right: 2%;
-    }
-  
-    .index-bar a {
-      font-size: 0.9rem;
-    }
-  
-    .content-section {
-      padding: 20px;
-    }
-  }
-  
+.kids-page {
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  overflow: hidden; /* Disable scroll */
+  background-size: cover; /* Background image for the page */
+  background-position: center;
+}
+
+.hamburger-icon {
+  position: absolute;
+  top: 10px;
+  right: 20px;
+  font-size: 30px;
+  z-index: 1000;
+}
+
+.topic-content {
+  text-align: center;
+  background: rgba(255, 255, 255, 0.8); /* Blurred effect */
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1);
+  width: 60%;
+}
+
+.topic-image {
+  margin-top: 20px;
+  height: 200px;
+  background: #ddd;
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.nav-button {
+  position: absolute;
+  left: 20px;
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  font-size: 30px;
+}
+
+.prev-button {
+  top: 40%;
+}
+
+.next-button {
+  bottom: 40%;
+}
+
+.topic-list {
+  list-style: none;
+  padding: 0;
+}
+
+.topic-list li {
+  margin-bottom: 10px;
+}
