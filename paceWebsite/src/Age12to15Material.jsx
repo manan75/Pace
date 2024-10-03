@@ -1,35 +1,89 @@
-import React from 'react';
-import { Card, Col, Row, Button } from 'react-bootstrap';
-import { Link } from 'react-router-dom';
-import './CustomCSS/Age12to15Material.css';
+import Card from 'react-bootstrap/Card';
+import Button from 'react-bootstrap/Button';
+import Row from 'react-bootstrap/Row';
+import Col from 'react-bootstrap/Col';
+import Img1 from './assets/jellyfish.jpeg';
 
-const Age12to15Material = () => {
-  const cards = [
-    { title: 'Theory', description: 'Learn all the theoretical concepts.', link: '/Age12to15' },
-    { title: 'Videos', description: 'Watch educational videos.', link: '/videos' },
-    { title: 'Quizzes', description: 'Test your knowledge.', link: '/quizzes' },
-    { title: 'Extra Resources', description: 'Explore additional learning material.', link: '/resources' },
-  ];
-
+function Age12to15Material() {
   return (
-    <div className="learning-hub">
-      <Row xs={1} md={2} lg={2} className="g-4">
-        {cards.map((card, index) => (
-          <Col key={index}>
-            <Card className="learning-card">
-              <Card.Body>
-                <Card.Title>{card.title}</Card.Title>
-                <Card.Text>{card.description}</Card.Text>
-                <Link to={card.link}>
-                  <Button variant="primary">Go to {card.title}</Button>
-                </Link>
-              </Card.Body>
-            </Card>
-          </Col>
-        ))}
+    <div style={{ backgroundColor: '#f0f0f5', minHeight: '100vh', padding: '2rem' }}> {/* Page background color */}
+      <Row className="justify-content-center"> {/* Bootstrap Row */}
+        
+        {/* First Card */}
+        <Col xs={12} md={6} lg={4} className="d-flex justify-content-center mb-4">
+          <Card style={{ width: '18rem', height: '24rem', backgroundColor: '#ffffff', color: '#000000' }}>
+            <Card.Img variant="top" src={Img1} style={{ opacity: 1 }} />
+            <div style={{ padding: '10px' }}>
+              <Card.Text style={{ fontSize: '1.5rem', fontWeight: 'bold', textAlign: 'center' }}>TITLE</Card.Text>
+              <Card.Text style={{ fontSize: '0.9rem', textAlign: 'center' }}>
+                Some quick example text to build on the card title and make up the bulk of the card's content.
+              </Card.Text>
+              <div style={{ display: 'flex', justifyContent: 'center' }}>
+                <Button variant="primary" style={{ backgroundColor: '#007bff', borderColor: '#007bff', color: '#ffffff' }}>
+                  Go somewhere
+                </Button>
+              </div>
+            </div>
+          </Card>
+        </Col>
+
+        {/* Second Card */}
+        <Col xs={12} md={6} lg={4} className="d-flex justify-content-center mb-4">
+          <Card style={{ width: '18rem', height: '24rem', backgroundColor: '#ffffff', color: '#000000' }}>
+            <Card.Img variant="top" src={Img1} style={{ opacity: 1 }} />
+            <div style={{ padding: '10px' }}>
+              <Card.Text style={{ fontSize: '1.5rem', fontWeight: 'bold', textAlign: 'center' }}>TITLE</Card.Text>
+              <Card.Text style={{ fontSize: '0.9rem', textAlign: 'center' }}>
+                Some quick example text to build on the card title and make up the bulk of the card's content.
+              </Card.Text>
+              <div style={{ display: 'flex', justifyContent: 'center' }}>
+                <Button variant="primary" style={{ backgroundColor: '#007bff', borderColor: '#007bff', color: '#ffffff' }}>
+                  Go somewhere
+                </Button>
+              </div>
+            </div>
+          </Card>
+        </Col>
+
+        {/* Third Card */}
+        <Col xs={12} md={6} lg={4} className="d-flex justify-content-center mb-4">
+          <Card style={{ width: '18rem', height: '24rem', backgroundColor: '#ffffff', color: '#000000' }}>
+            <Card.Img variant="top" src={Img1} style={{ opacity: 1 }} />
+            <div style={{ padding: '10px' }}>
+              <Card.Text style={{ fontSize: '1.5rem', fontWeight: 'bold', textAlign: 'center' }}>TITLE</Card.Text>
+              <Card.Text style={{ fontSize: '0.9rem', textAlign: 'center' }}>
+                Some quick example text to build on the card title and make up the bulk of the card's content.
+              </Card.Text>
+              <div style={{ display: 'flex', justifyContent: 'center' }}>
+                <Button variant="primary" style={{ backgroundColor: '#007bff', borderColor: '#007bff', color: '#ffffff' }}>
+                  Go somewhere
+                </Button>
+              </div>
+            </div>
+          </Card>
+        </Col>
+
+        {/* Fourth Card */}
+        <Col xs={12} md={6} lg={4} className="d-flex justify-content-center mb-4">
+          <Card style={{ width: '18rem', height: '24rem', backgroundColor: '#ffffff', color: '#000000' }}>
+            <Card.Img variant="top" src={Img1} style={{ opacity: 1 }} />
+            <div style={{ padding: '10px' }}>
+              <Card.Text style={{ fontSize: '1.5rem', fontWeight: 'bold', textAlign: 'center' }}>TITLE</Card.Text>
+              <Card.Text style={{ fontSize: '0.9rem', textAlign: 'center' }}>
+                Some quick example text to build on the card title and make up the bulk of the card's content.
+              </Card.Text>
+              <div style={{ display: 'flex', justifyContent: 'center' }}>
+                <Button variant="primary" style={{ backgroundColor: '#007bff', borderColor: '#007bff', color: '#ffffff' }}>
+                  Go somewhere
+                </Button>
+              </div>
+            </div>
+          </Card>
+        </Col>
+        
       </Row>
     </div>
   );
-};
+}
 
 export default Age12to15Material;

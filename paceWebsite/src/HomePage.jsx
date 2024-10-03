@@ -3,6 +3,8 @@ import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
 import NavbarComponent from './NavbarComponent';
 import {  Row, Col, Carousel } from 'react-bootstrap';
+import Button from 'react-bootstrap/Button';
+import Card from 'react-bootstrap/Card';
 import 'bootstrap/dist/css/bootstrap.min.css'; // Import Bootstrap CSS
 import './CustomCSS/HomePageCSS.css'
 import HomePage1 from './assets/HomePage1.jpeg'
@@ -154,6 +156,7 @@ function HomePage(){
 
 
 
+
     <div className="container-fluid learning-hub-section text-center py-5">
       <h2 className="text-white mb-4">Learning Hub</h2>
       <div className="row justify-content-center">
@@ -179,7 +182,7 @@ function HomePage(){
     </div>
 
 
-
+    
 
  
 
