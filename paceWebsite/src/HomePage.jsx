@@ -9,7 +9,7 @@ import HomePage1 from './assets/HomePage1.jpeg'
 import Jellyfish from './assets/jellyfish.jpeg'
 import aerosol from './assets/aerosol.jpeg'
 import buildPace from './assets/buildPace.jpeg'
-import HomePageSection from './HomePageSection'
+import HomePageSection from './HomePageSection'  
 
 
 function HomePage(){

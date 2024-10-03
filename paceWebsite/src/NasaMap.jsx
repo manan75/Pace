@@ -41,6 +41,7 @@ const NasaMap = () => {
     {/* Map Section */}
     <div className="container-fluid map-section text-center py-5">
       <h2 className="text-white mb-4">See What is PACE doing right now</h2>
+      <h3 className='text-white mb-4'>Chlorophyll-a Concentration</h3>
       <div
         ref={mapContainer}
         style={{ height: '500px', width: '90%', marginLeft: 'auto', borderRadius: '10px',marginRight:'auto' }}

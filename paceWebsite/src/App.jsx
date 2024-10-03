@@ -1,7 +1,9 @@
 import { useState } from 'react'
 import 'bootstrap/dist/css/bootstrap.min.css';
+import AerosolData from './AerosolData.jsx';
 
 import HomePage from './HomePage';
+import MapCarousel from './MapCarousel.jsx';
 
 import NasaMap from './NasaMap'
 import Bg from './JourneyComponent.jsx';
@@ -14,6 +16,7 @@ function App() {
 
   return (
     <>
+    <MapCarousel/>
     <HomePage/>
     <NasaMap/>
     {/* <Bg/> */}

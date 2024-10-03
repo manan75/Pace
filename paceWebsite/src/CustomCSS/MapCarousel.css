@@ -1,0 +1,11 @@
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  background-color: rgb(33, 228, 179); /* Change this to your desired color */
+  border-radius: 50%; /* Optional: for making the icons circular */
+}
+
+.carousel-control-prev,
+.carousel-control-next {
+  filter: invert(1); /* This inverts the arrow icon color to white */
+  padding-top: 100px;
+}
