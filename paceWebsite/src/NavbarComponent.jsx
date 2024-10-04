@@ -30,7 +30,7 @@ function NavbarComponent(){
              {/* Learning hub routing*/}
               <NavDropdown title="LEARNING HUB" id="navbarScrollingDropdown">
                 <NavDropdown.Item  style={{ backgroundColor: '#47be87' }}   ><Link to="/Age8To11" style={{ textDecoration: 'none', color: 'inherit' }}>AGE GROUP 8-11</Link></NavDropdown.Item>
-                <NavDropdown.Item  style={{ backgroundColor: '#47be87' }}><Link to="/Age12to15Material" style={{ textDecoration: 'none', color: 'inherit' }}>AGE GROUP 12-15</Link></NavDropdown.Item>
+                <NavDropdown.Item  style={{ backgroundColor: '#47be87' }}><Link to="/ChapterListAge12to15" style={{ textDecoration: 'none', color: 'inherit' }}>AGE GROUP 12-15</Link></NavDropdown.Item>
                 <NavDropdown.Item  style={{ backgroundColor: '#47be87' }}><Link to="/Age16+" style={{ textDecoration: 'none', color: 'inherit' }}>AGE GROUP 16+</Link></NavDropdown.Item>
                 <NavDropdown.Item  style={{ backgroundColor: '#47be87' }}><Link to="/fotTeachers" style={{ textDecoration: 'none', color: 'inherit' }}>For teachers</Link></NavDropdown.Item>
               </NavDropdown>
@@ -44,17 +44,19 @@ function NavbarComponent(){
               <NavDropdown.Item  style={{ backgroundColor: '#47be87' }}   ><Link to="/Science/StoryMaps" style={{ textDecoration: 'none', color: 'inherit' }}>StoryMaps</Link></NavDropdown.Item>
               
               </NavDropdown>
-            
+
+              {/* pace routing */}
+
               <NavDropdown title="PACE" id="navbarScrollingDropdown">
-                <NavDropdown.Item href="#action3">PACE</NavDropdown.Item>
-                <NavDropdown.Item href="#action4">
-                  Another action
-                </NavDropdown.Item>
-                <NavDropdown.Divider />
-                <NavDropdown.Item href="#action5">
-                  Something else here
-                </NavDropdown.Item>
+              <NavDropdown.Item  style={{ backgroundColor: '#47be87' }}   ><Link to="/Science/Overview" style={{ textDecoration: 'none', color: 'inherit' }}>WHAT'S UP PACE!</Link></NavDropdown.Item>
+              <NavDropdown.Item  style={{ backgroundColor: '#47be87' }}   ><Link to="/Science/PhytoPlankton" style={{ textDecoration: 'none', color: 'inherit' }}>PACE Instruments</Link></NavDropdown.Item>
+              <NavDropdown.Item  style={{ backgroundColor: '#47be87' }}   ><Link to="/Science/Wavelenght" style={{ textDecoration: 'none', color: 'inherit' }}>MISSION</Link></NavDropdown.Item>
+              <NavDropdown.Item  style={{ backgroundColor: '#47be87' }}   ><Link to="/Science/StoryMaps" style={{ textDecoration: 'none', color: 'inherit' }}>FUTURE</Link></NavDropdown.Item>
+              
               </NavDropdown>
+
+
+
 
               <Nav.Link href="#action2">GALLERY</Nav.Link>
             
