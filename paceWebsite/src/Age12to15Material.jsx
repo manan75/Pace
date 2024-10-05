@@ -65,8 +65,8 @@ function Age12to15Material() {
               </Card.Text>
               <div style={{ display: 'flex', justifyContent: 'center' }}>
                 <Button variant="primary" style={{ backgroundColor: '#007bff', borderColor: ' #007bff', color: '#ffffff', transition: 'background-color 0.3s' }} className="button-hover">
-                  Go to Quizzes
-                </Button>
+                <Link to='/TeenQuizs'  style={{ color: '#ffffff', textDecoration: 'none' }}>  Go to Quizzes
+               </Link> </Button>
               </div>
             </div>
           </Card> 

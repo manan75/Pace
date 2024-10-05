@@ -6,6 +6,7 @@ import Age8to11 from './Age8to11.jsx'
 import Age11to15Chap from './Age11to15Chap.jsx'
 import Age12to15Material from './Age12to15Material.jsx'
 import ChapterList12to15 from './ChapterList12to15.jsx'
+import TeenQuiz from './TeenQuiz.jsx'
 import './index.css'
 import ReactDOM from 'react-dom/client'
 import {createBrowserRouter, RouterProvider} from "react-router-dom"
@@ -39,6 +40,10 @@ const router = createBrowserRouter([
     path:"/ChapterListAge12to15",
     element:<ChapterList12to15/>
   },
+  {
+    path: "/TeenQuiz",
+    element: <TeenQuiz/>
+  }
 ])
 
 ReactDOM.createRoot(document.getElementById('root')).render(
