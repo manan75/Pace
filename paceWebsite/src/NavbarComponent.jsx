@@ -14,7 +14,7 @@ function NavbarComponent(){
         <>
           <Navbar className='custom-navbar' expand="lg" >
         <Container fluid>
-          <Navbar.Brand href="#">Navbar scroll</Navbar.Brand>
+          <Navbar.Brand href="#">LEARN WITH PACE</Navbar.Brand>
           <Navbar.Toggle aria-controls="navbarScroll" />
           <Navbar.Collapse id="navbarScroll">
             <Nav

@@ -58,7 +58,7 @@ function HomePage(){
               />
               <Carousel.Caption>
                 <h3>PACE</h3>
-                <p>Some representative placeholder content  for the first slide.</p>
+                <p></p>
               </Carousel.Caption>
             </Carousel.Item>
             <Carousel.Item>
@@ -68,8 +68,8 @@ function HomePage(){
                 alt="Second slide"
               />
               <Carousel.Caption>
-                <h3>Second Slide Label</h3>
-                <p>Some representative placeholder content for the second slide.</p>
+                <h3>OUR MISSION</h3>
+                <p>To provide the resources of PACE to our young generations</p>
               </Carousel.Caption>
             </Carousel.Item>
             <Carousel.Item>
@@ -99,8 +99,8 @@ function HomePage(){
           style={{ objectFit: 'cover', height: '500px' }} // Ensures image covers the height
         />
         <Carousel.Caption>
-          <h3>First Slide Label</h3>
-          <p>Some representative placeholder content for the first slide.</p>
+          <h3>OUR MISSION</h3>
+          <p>To provide the resources of PACE to our young generations</p>
         </Carousel.Caption>
       </Carousel.Item>
       <Carousel.Item style={{ height: '100%' }}>
