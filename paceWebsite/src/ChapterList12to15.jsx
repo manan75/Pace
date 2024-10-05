@@ -1,53 +1,74 @@
+import React, { useEffect, useState } from 'react';
 import Button from 'react-bootstrap/Button';
 import Card from 'react-bootstrap/Card';
 import NavbarComponent from './NavbarComponent';
 import { Link } from 'react-router-dom';
+import "./CustomCSS/ChapterList12to15.css"; // Create a CSS file for animations and hover effects
 
 function ChapterList12to15() {
+  const [loaded, setLoaded] = useState(false);
+
+  useEffect(() => {
+    // Set loaded to true to trigger the slide-in animation
+    setLoaded(true);
+  }, []);
+
   return (
     <>
-    <NavbarComponent/>
-    <div style={{ display: 'flex', flexDirection: 'column', gap: '1rem', padding: '2rem', backgroundColor: '#4888f0', minHeight: '100vh' }}>
-      {/* First Chapter */}
-      <Card style={{ width: '100%', maxWidth: '800px', padding: '1rem', boxShadow: '0px 4px 8px rgba(0, 0, 0, 0.1)', display: 'flex', flexDirection: 'row', justifyContent: 'space-between', alignItems: 'center' }}>
-        <div>
-          <h5 style={{ fontSize: '1.5rem', fontWeight: 'bold' }}>Chapter 1</h5>
-          <p style={{ fontSize: '1rem' }}>
-            Topic 1, Topic 2, Topic 3
-          </p>
-        </div>
-        <Button variant="primary" style={{ backgroundColor: '#007bff', borderColor: '#007bff', color: '#ffffff' }}><Link to='/Age12to15Material'>
-          Start
-          </Link>
-        </Button>
-      </Card>
+      <NavbarComponent />
+      <div className={`chapter-list ${loaded ? 'slide-in' : ''}`}>
+        {/* First Chapter */}
+        <Card className="chapter-card">
+          <div>
+            <h5>Chapter 1: PACE (Plankton, Aerosol, Cloud, Ocean Ecosystem)</h5>
+            <p>What is PACE, Primary Instruments of PACE, PACE's Ocean Color Instrument (OCI)...</p>
+          </div>
+          <Button variant="success">
+            <Link to='/Age12to15Material' style={{ color: '#ffffff', textDecoration: 'none' }}>
+              Start
+            </Link>
+          </Button>
+        </Card>
 
-      {/* Second Chapter */}
-      <Card style={{ width: '100%', maxWidth: '800px', padding: '1rem', boxShadow: '0px 4px 8px rgba(0, 0, 0, 0.1)', display: 'flex', flexDirection: 'row', justifyContent: 'space-between', alignItems: 'center' }}>
-        <div>
-          <h5 style={{ fontSize: '1.5rem', fontWeight: 'bold' }}>Chapter 2</h5>
-          <p style={{ fontSize: '1rem' }}>
-            Topic 1, Topic 2, Topic 3
-          </p>
-        </div>
-        <Button variant="primary" style={{ backgroundColor: '#007bff', borderColor: '#007bff', color: '#ffffff' }}>
-          Start
-        </Button>
-      </Card>
+        {/* Second Chapter */}
+        <Card className="chapter-card">
+          <div>
+            <h5>Chapter 2: PACE data</h5>
+            <p>Ocean data, Atmospheric data, Climate and Environmental data...</p>
+          </div>
+          <Button variant="success">
+            <Link to='/Age12to15Material' style={{ color: '#ffffff', textDecoration: 'none' }}>
+              Start
+            </Link>
+          </Button>
+        </Card>
 
-      {/* Third Chapter */}
-      <Card style={{ width: '100%', maxWidth: '800px', padding: '1rem', boxShadow: '0px 4px 8px rgba(0, 0, 0, 0.1)', display: 'flex', flexDirection: 'row', justifyContent: 'space-between', alignItems: 'center' }}>
-        <div>
-          <h5 style={{ fontSize: '1.5rem', fontWeight: 'bold' }}>Chapter 3</h5>
-          <p style={{ fontSize: '1rem' }}>
-            Topic 1, Topic 2, Topic 3
-          </p>
-        </div>
-        <Button variant="primary" style={{ backgroundColor: '#007bff', borderColor: '#007bff', color: '#ffffff' }}>
-          Start
-        </Button>
-      </Card>
-    </div>
+        {/* Third Chapter */}
+        <Card className="chapter-card">
+          <div>
+            <h5>Chapter 3: Planktons</h5>
+            <p>What is Plankton, Phytoplankton, Zooplankton, Harmful Plankton...</p>
+          </div>
+          <Button variant="success">
+            <Link to='/Age12to15Material' style={{ color: '#ffffff', textDecoration: 'none' }}>
+              Start
+            </Link>
+          </Button>
+        </Card>
+
+        {/* Fourth Chapter */}
+        <Card className="chapter-card">
+          <div>
+            <h5>Chapter 4: Ocean Color</h5>
+            <p>Ocean Color and Space technology, Ocean Color Spectrum, Monitoring Ocean Color from space...</p>
+          </div>
+          <Button variant="success">
+            <Link to='/Age12to15Material' style={{ color: '#ffffff', textDecoration: 'none' }}>
+              Start
+            </Link>
+          </Button>
+        </Card>
+      </div>
     </>
   );
 }

@@ -12,6 +12,7 @@ import Jellyfish from './assets/jellyfish.jpeg'
 import aerosol from './assets/aerosol.jpeg'
 import buildPace from './assets/buildPace.jpeg'
 import HomePageSection from './HomePageSection'  
+import MapCarousel from './MapCarousel';
 
 
 function HomePage(){
@@ -29,6 +30,7 @@ function HomePage(){
 
     return(
         <>
+        
         <NavbarComponent/>
 
         <Container fluid>
