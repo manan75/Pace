@@ -6,6 +6,7 @@ import HomePage from './HomePage';
 import MapCarousel from './MapCarousel.jsx';
 
 import NasaMap from './NasaMap'
+import MapSwitcher from './MapSwitcher.jsx';
 import Bg from './JourneyComponent.jsx';
 import {PrimaryButton,DangerButton,SecondaryButton,SuccessButton} from './BootstrapComponents/ButtonTypes';
 import bg from './JourneyComponent.jsx';
@@ -18,7 +19,7 @@ function App() {
     <>
     
     <HomePage/>
-    <NasaMap/>
+    
     {/* <Bg/> */}
     
 

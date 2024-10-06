@@ -1,20 +1,15 @@
 import React, { useState } from 'react';
-import { ProgressBar, Button, Container, Row, Col, Card } from 'react-bootstrap';
+import { ProgressBar, Button, Container, Row, Col } from 'react-bootstrap';
 import NavbarComponent from './NavbarComponent';
 import './CustomCSS/TeenQuiz.css'; // Custom CSS for the quiz
+import BackgroundVideo from './assets/QuizBg.mp4';  // Import your background video
 
 const TeenQuiz = () => {
   const questions = [
     { question: 'What does NASAs PACE mission primarily study?', correctAnswer: 1, options: ['Outer space debris', 'Ocean color and phytoplankton', 'Air pollution', 'Magnetic field of Earth'] },
-    { question: 'Which of the following is a primary producer in ocean ecosystems, studied by NASAs PACE mission?', correctAnswer:1, options: ['Fish', 'Phytoplanktons', 'Crustaceans', 'Dolphins'] },
+    { question: 'Which of the following is a primary producer in ocean ecosystems, studied by NASAs PACE mission?', correctAnswer: 1, options: ['Fish', 'Phytoplanktons', 'Crustaceans', 'Dolphins'] },
     { question: 'Why is studying phytoplankton important for understanding climate change?', correctAnswer: 0, options: ['They produce oxygen and absorb carbon dioxide', 'They cause ocean pollution', 'They consume more water resources', 'They lead to coral reef destruction'] },
-    { question: 'What is the smallest prime number?', correctAnswer: 0, options: ['2', '3', '5', '7'] },
-    { question: 'What is the largest ocean?', correctAnswer: 1, options: ['Atlantic', 'Pacific', 'Indian', 'Arctic'] },
-    { question: 'Who painted the Mona Lisa?', correctAnswer: 3, options: ['Vincent van Gogh', 'Pablo Picasso', 'Claude Monet', 'Leonardo da Vinci'] },
-    { question: 'What is the capital of Japan?', correctAnswer: 2, options: ['Seoul', 'Beijing', 'Tokyo', 'Bangkok'] },
-    { question: 'What is the chemical symbol for water?', correctAnswer: 1, options: ['H2', 'H2O', 'O2', 'CO2'] },
-    { question: 'What is 5 + 7?', correctAnswer: 2, options: ['10', '11', '12', '13'] },
-    { question: 'Which is the fastest land animal?', correctAnswer: 3, options: ['Lion', 'Tiger', 'Elephant', 'Cheetah'] }
+    // Additional questions...
   ];
 
   const [currentQuestionIndex, setCurrentQuestionIndex] = useState(0);
@@ -27,7 +22,6 @@ const TeenQuiz = () => {
 
   const handleOptionSelect = (index) => {
     if (selectedOption !== null) return; // Prevent multiple selections
-
     setSelectedOption(index);
     if (index === currentQuestion.correctAnswer) {
       setScore(score + 5);
@@ -48,14 +42,35 @@ const TeenQuiz = () => {
 
   return (
     <>
-      <NavbarComponent/>
-      <Container>
+      <NavbarComponent />
+
+      {/* Background video */}
+      <video 
+        autoPlay 
+        muted 
+        loop 
+        style={{
+          position: 'fixed',
+          top: 0,
+          left: 0,
+          width: '100vw',
+          height: '100vh',
+          objectFit: 'cover',   // Ensure the video covers the entire screen
+          zIndex: -1,           // Set the video behind the content
+          opacity: 0.75,         // Set opacity to make the video less distracting
+        }}>
+        <source src={BackgroundVideo} type="video/mp4" />
+        Your browser does not support the video tag.
+      </video>
+
+      {/* Quiz content */}
+      <Container className="quiz-container">
         <Row className="my-4">
           <Col>
-            <h2>Quiz</h2>
+            <h2 style={{ color: 'white' }}>Quiz</h2>
           </Col>
           <Col className="text-right">
-            <h4>Score: {score}</h4>
+            <h4 style={{ color: 'white' }}>Score: {score}</h4>
           </Col>
         </Row>
 
@@ -67,7 +82,7 @@ const TeenQuiz = () => {
 
         <Row className="my-4">
           <Col>
-            <h4>{currentQuestion.question}</h4>
+            <h4  style={{ color: 'white' }}>{currentQuestion.question}</h4>
           </Col>
         </Row>
 
@@ -87,7 +102,7 @@ const TeenQuiz = () => {
         {feedback && (
           <Row className="my-2">
             <Col>
-              <h5>{feedback}</h5>
+              <h5 style={{ color: 'white' }}>{feedback}</h5>
             </Col>
           </Row>
         )}
@@ -95,7 +110,7 @@ const TeenQuiz = () => {
         {showNextButton && currentQuestionIndex < 9 && (
           <Row className="my-4">
             <Col>
-              <Button variant="primary" onClick={handleNext}>
+              <Button variant="primary" onClick={handleNext} style={{ color: 'white' }}>
                 Next
               </Button>
             </Col>
@@ -105,7 +120,7 @@ const TeenQuiz = () => {
         {currentQuestionIndex === 9 && (
           <Row className="my-4">
             <Col>
-              <h3>Quiz Completed! Your final score is: {score}</h3>
+              <h3 style={{ color: 'white' }}>Quiz Completed! Your final score is: {score}</h3>
             </Col>
           </Row>
         )}

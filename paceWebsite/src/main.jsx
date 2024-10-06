@@ -7,6 +7,7 @@ import Age11to15Chap from './Age11to15Chap.jsx'
 import Age12to15Material from './Age12to15Material.jsx'
 import ChapterList12to15 from './ChapterList12to15.jsx'
 import TeenQuiz from './TeenQuiz.jsx'
+import Video from './Video.jsx'
 import './index.css'
 import ReactDOM from 'react-dom/client'
 import {createBrowserRouter, RouterProvider} from "react-router-dom"
@@ -43,6 +44,10 @@ const router = createBrowserRouter([
   {
     path: "/TeenQuiz",
     element: <TeenQuiz/>
+  },
+  {
+    path: "/Gallery",
+    element: <Video/>
   }
 ])
 

@@ -13,6 +13,7 @@ import aerosol from './assets/aerosol.jpeg'
 import buildPace from './assets/buildPace.jpeg'
 import HomePageSection from './HomePageSection'  
 import MapCarousel from './MapCarousel';
+import MapSwitcher from './MapSwitcher';
 
 
 function HomePage(){
@@ -61,28 +62,7 @@ function HomePage(){
                 <p></p>
               </Carousel.Caption>
             </Carousel.Item>
-            <Carousel.Item>
-              <img
-                className="d-block w-100"
-                src="https://images-assets.nasa.gov/image/KSC-20240208-PH-KMO03_0010/KSC-20240208-PH-KMO03_0010~small.jpg"
-                alt="Second slide"
-              />
-              <Carousel.Caption>
-                <h3>OUR MISSION</h3>
-                <p>To provide the resources of PACE to our young generations</p>
-              </Carousel.Caption>
-            </Carousel.Item>
-            <Carousel.Item>
-              <img
-                className="d-block w-100"
-                src="https://via.placeholder.com/800x400?text=Third+Slide"
-                alt="Third slide"
-              />
-              <Carousel.Caption>
-                <h3>Third Slide Label</h3>
-                <p>Some representative placeholder content for the third slide.</p>
-              </Carousel.Caption>
-            </Carousel.Item>
+           
           </Carousel>
         </Col>
       </Row>
@@ -103,34 +83,10 @@ function HomePage(){
           <p>To provide the resources of PACE to our young generations</p>
         </Carousel.Caption>
       </Carousel.Item>
-      <Carousel.Item style={{ height: '100%' }}>
-        <img
-          className="d-block w-100"
-          src={HomePage1}
-          alt="Second slide"
-          style={{ objectFit: 'cover', height: '500px' }} // Ensures image covers the height
-        />
-        <Carousel.Caption>
-          <h3>Second Slide Label</h3>
-          <p>Some representative placeholder content for the second slide.</p>
-        </Carousel.Caption>
-      </Carousel.Item>
-      <Carousel.Item style={{ height: '100%' }}>
-        <img
-          className="d-block w-100"
-          src="https://via.placeholder.com/1920x500?text=Third+Slide"
-          alt="Third slide"
-          style={{ objectFit: 'cover', height: '100%' }} // Ensures image covers the height
-        />
-        <Carousel.Caption>   
       
-
-          <h3>Third Slide Label</h3>
-          <p>Some representative placeholder content for the third slide.</p>
-        </Carousel.Caption>
-      </Carousel.Item>
     </Carousel>
 
+      <MapSwitcher/>
 
 
     <div className="container-fluid bg-blue text-center py-5">

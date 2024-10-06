@@ -58,7 +58,7 @@ function NavbarComponent(){
 
 
 
-              <Nav.Link href="#action2">GALLERY</Nav.Link>
+              <Nav.Link href="#action2"><Link to="/Gallery" style={{ textDecoration: 'none', color: 'inherit' }}>Gallery</Link></Nav.Link>
             
             
             </Nav>
