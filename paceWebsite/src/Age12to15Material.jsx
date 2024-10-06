@@ -34,7 +34,7 @@ function Age12to15Material() {
           backgroundRepeat: 'no-repeat',    // Prevent repeating the image
           backgroundPosition: 'center',     // Center the image
           filter: 'blur(10px)',             // Apply blur effect
-          zIndex: -1,                       // Send the background behind the content
+          zIndex: -1,                       
         }}></div>
 
         {/* Cards container */}

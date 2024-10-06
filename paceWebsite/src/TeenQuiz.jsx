@@ -9,7 +9,7 @@ const TeenQuiz = () => {
     { question: 'What does NASAs PACE mission primarily study?', correctAnswer: 1, options: ['Outer space debris', 'Ocean color and phytoplankton', 'Air pollution', 'Magnetic field of Earth'] },
     { question: 'Which of the following is a primary producer in ocean ecosystems, studied by NASAs PACE mission?', correctAnswer: 1, options: ['Fish', 'Phytoplanktons', 'Crustaceans', 'Dolphins'] },
     { question: 'Why is studying phytoplankton important for understanding climate change?', correctAnswer: 0, options: ['They produce oxygen and absorb carbon dioxide', 'They cause ocean pollution', 'They consume more water resources', 'They lead to coral reef destruction'] },
-    // Additional questions...
+    
   ];
 
   const [currentQuestionIndex, setCurrentQuestionIndex] = useState(0);
