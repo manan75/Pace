@@ -11,6 +11,7 @@ import Bg from './JourneyComponent.jsx';
 import {PrimaryButton,DangerButton,SecondaryButton,SuccessButton} from './BootstrapComponents/ButtonTypes';
 import bg from './JourneyComponent.jsx';
 import Kids1 from './Kids1.jsx';
+import AiBot from './AiBot.jsx';
 
 function App() {
   
@@ -19,6 +20,7 @@ function App() {
     <>
     
     <HomePage/>
+    <AiBot/>
     
     {/* <Bg/> */}
     
