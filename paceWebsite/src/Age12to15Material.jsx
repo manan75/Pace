@@ -104,7 +104,9 @@ function Age12to15Material() {
               </Card.Text>
               <div style={buttonContainerStyle}>
                 <Button variant="primary" style={buttonStyle} className="button-hover">
-                  Go somewhere
+                <Link to='/MiniGame' style={linkStyle}>
+                    Go to Resources
+                  </Link>
                 </Button>
               </div>
             </div>
