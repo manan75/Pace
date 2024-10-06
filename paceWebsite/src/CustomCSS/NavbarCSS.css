@@ -12,4 +12,39 @@
   .custom-navbar .nav-link:hover {
     color: #f8f9fa; /* Change color on hover */
   }
+
+  /* NavbarCSS.css */
+
+/* Style for dropdown items */
+.custom-dropdown-item {
+  background-color: #47be87; /* Your desired background color */
+  color: white;
+  width: 100%; /* Ensure the background fills the width */
+  padding: 10px 15px; /* Padding for better spacing */
+  text-align: left; /* Align text to the left */
+  transition: background-color 0.3s ease; /* Smooth hover transition */
+}
+
+.custom-dropdown-item:hover {
+  background-color: #3a9e6f; /* Darken the color on hover */
+  color: white; /* Ensure text stays white */
+}
+
+.custom-navbar .nav-link {
+  color: white;
+  font-size: 1.1rem; /* Slightly larger font size */
+}
+
+.custom-navbar .nav-link:hover {
+  color: #ccc; /* Lighter hover effect */
+}
+
+.custom-dropdown-toggle {
+  color: white; /* White text for dropdown toggle */
+}
+
+.custom-dropdown-toggle:hover {
+  color: #ccc;
+}
+
   
