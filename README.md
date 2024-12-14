@@ -17,3 +17,6 @@ For the PACE in Classroom challenge, our goal is to integrate this real-world Ea
 ![image](https://github.com/user-attachments/assets/876d1657-fe2e-4afa-8d58-1659238a5d63)
 
 ![image](https://github.com/user-attachments/assets/a5c37839-540d-497b-b3ba-d8cbd55b241b)
+
+
+
